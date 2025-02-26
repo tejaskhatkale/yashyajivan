@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Other theme attributes -->
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Base.Theme.Jivanseva" parent="Theme.Material3.DayNight.NoActionBar">
+       
+    </style>
+
+    <style name="Theme.Jivanseva" parent="Base.Theme.Jivanseva" />
+
+    <style name="Theme.Jivanseva.BottomNavigationView" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="bottomNavigationStyle">@style/Widget.AppCompat.BottomNavigationView</item>
+    </style>
+    <style name="Widget.AppCompat.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+
+        <item name="itemRippleColor">@color/rippleColor</item>
+    </style>
+    <style name="BottomNavigationView" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/indicatorColor</item>
+    </style>
+</resources>

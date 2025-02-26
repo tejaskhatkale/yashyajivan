@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:gravity="center"
+    android:background="@color/purple_200"
+    android:orientation ="vertical"
+    android:padding="16dp">
+
+
+    <!-- Circle image avatar-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/user"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:textColor="@color/textColor"
+        android:id="@+id/user_name"
+        android:textStyle="bold"
+        android:text="Devkate nagnath"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:text="helloevery@gmail.com"/>
+
+
+</LinearLayout>

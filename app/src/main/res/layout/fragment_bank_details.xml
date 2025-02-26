@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Bank Details"
+            android:textColor="#1F2C3E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Bank Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Name"
+            android:textColor="#1F2C3E"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/bankNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:hint="Enter bank name"
+            android:inputType="text"
+            android:backgroundTint="#DADCE0" />
+
+        <!-- IFSC Code -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code"
+            android:textColor="#1F2C3E"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ifscCodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:hint="Enter IFSC code"
+            android:inputType="text"
+            android:backgroundTint="#DADCE0" />
+
+        <!-- Account No -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account No."
+            android:textColor="#1F2C3E"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/accountNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:hint="Enter account number"
+            android:inputType="number"
+            android:backgroundTint="#DADCE0" />
+
+        <!-- Branch Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch Name"
+            android:textColor="#1F2C3E"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/branchNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:hint="Enter branch name"
+            android:inputType="text"
+            android:backgroundTint="#DADCE0" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update!"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/navbar"
+            android:layout_marginTop="24dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Jivanseva"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EPin"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.Share"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.PurchaseReport"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.TdsAndAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.JoiningReport"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.BusinessSummary"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.LevelCount"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.LevelWiseMembers"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.LegView"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.DirectReferrals"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.Members"
+            android:exported="false" />
+        <activity
+            android:name=".drawerActivities.BinaryTree"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Notification"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Payout"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EWallet"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditProfile"
+            android:exported="false" />
+<!--        <activity android:name=".MainActivity"-->
+<!--            android:exported="true"/>-->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

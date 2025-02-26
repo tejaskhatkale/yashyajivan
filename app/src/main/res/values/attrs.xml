@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable
+        name="CustomBox">
+        <attr name="boxColor" format="color" />
+    </declare-styleable>
+</resources>

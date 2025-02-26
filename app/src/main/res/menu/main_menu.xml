@@ -1,0 +1,121 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Non-dropdown item -->
+    <item
+        android:id="@+id/edit_profile"
+        android:title="Edit Profile"
+        android:icon="@drawable/edit_profile_icon" />
+
+    <!-- Team Management Dropdown with Sub-options -->
+    <group
+        android:id="@+id/team"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/team_management"
+            android:title="Team Management"
+            android:icon="@drawable/team_manag_icon" />
+
+        <item
+            android:id="@+id/my_binary_tree"
+            android:title="My Binary Tree"
+            android:icon="@drawable/binary_tree_icon"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/all_members"
+            android:title="All members"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/direct_referrals"
+            android:title="Direct Referrals"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/leg_view"
+            android:title="Leg View"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:visible="false" />
+        <item
+            android:id="@+id/level_wise_members"
+            android:title="Level Wise Members"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/level_count"
+            android:title="Level Count"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:visible="false" />
+
+    </group>
+
+    <item
+        android:id="@+id/e_pin_management"
+        android:title="E-Pin Management"
+        android:icon="@drawable/e_pin_icon" />
+
+    <item
+        android:id="@+id/e_wallet"
+        android:title="E-Wallet"
+        android:icon="@drawable/e_wallet_icon" />
+
+    <item
+        android:id="@+id/payout"
+        android:title="Payout"
+        android:icon="@drawable/payout" />
+
+    <group
+        android:id="@+id/business"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/business_management"
+            android:title="Business Management"
+            android:icon="@drawable/business_manag_icon" />
+
+        <item
+            android:id="@+id/business_summary"
+            android:title="Business Summary"
+            android:icon="@drawable/summary_icon"
+            android:visible="false" />
+    </group>
+
+    <group
+        android:id="@+id/r"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/report"
+            android:title="Report"
+            android:icon="@drawable/report_icon" />
+
+        <item
+            android:id="@+id/joining_report"
+            android:title="Joining Report"
+            android:icon="@android:drawable/ic_menu_add"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/tds"
+            android:title="TDS and Admin"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/purchase_report"
+            android:title="Purchase Report"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:visible="false" />
+
+    </group>
+
+    <item
+        android:id="@+id/share"
+        android:title="Share This App"
+        android:icon="@drawable/share_icon" />
+
+</menu>
