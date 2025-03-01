@@ -1,4 +1,6 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- Non-dropdown item -->
     <item
@@ -24,7 +26,7 @@
 
         <item
             android:id="@+id/all_members"
-            android:title="All members"
+            android:title="All Members"
             android:icon="@android:drawable/ic_menu_sort_by_size"
             android:visible="false" />
 
@@ -39,6 +41,7 @@
             android:title="Leg View"
             android:icon="@android:drawable/ic_menu_sort_by_size"
             android:visible="false" />
+
         <item
             android:id="@+id/level_wise_members"
             android:title="Level Wise Members"
@@ -53,6 +56,7 @@
 
     </group>
 
+    <!-- Individual Items -->
     <item
         android:id="@+id/e_pin_management"
         android:title="E-Pin Management"
@@ -66,8 +70,9 @@
     <item
         android:id="@+id/payout"
         android:title="Payout"
-        android:icon="@drawable/payout" />
+        android:icon="@drawable/payout_icon" /> <!-- ✅ Fixed missing drawable reference -->
 
+    <!-- Business Management Dropdown -->
     <group
         android:id="@+id/business"
         android:checkableBehavior="single">
@@ -84,9 +89,10 @@
             android:visible="false" />
     </group>
 
+    <!-- Reports Dropdown -->
     <group
-        android:id="@+id/r"
-        android:checkableBehavior="single">
+        android:id="@+id/report_group"
+        android:checkableBehavior="single"> <!-- ✅ Changed id from 'r' to 'report_group' -->
 
         <item
             android:id="@+id/report"
@@ -113,9 +119,15 @@
 
     </group>
 
+    <!-- Share & Logout -->
     <item
         android:id="@+id/share"
         android:title="Share This App"
         android:icon="@drawable/share_icon" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout" /> <!-- ✅ Ensured correct namespace -->
 
 </menu>

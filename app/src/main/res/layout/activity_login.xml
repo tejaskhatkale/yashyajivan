@@ -2,8 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="@color/cardview_light_background"
-    android:padding="24dp">
+    android:padding="30dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,14 +12,15 @@
         android:orientation="vertical"
         android:gravity="center">
 
+        <!-- Logo Image -->
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@drawable/newlog"
-            >
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="16dp" />
 
-        </ImageView>
-        <!-- Title Text -->
+        <!-- Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,9 +28,9 @@
             android:textSize="35sp"
             android:textColor="@color/material_dynamic_primary0"
             android:textStyle="bold"
-            android:paddingBottom="24dp" />
+            android:paddingBottom="12dp" />
 
-        <!--Next Text-->
+        <!-- Subtitle -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,22 +40,22 @@
             android:textStyle="bold"
             android:paddingBottom="24dp" />
 
-        <!-- Member ID Input Field -->
+        <!-- Member ID Input -->
         <EditText
-            android:id="@+id/memberID"
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/round_edittext"
-            android:hint="Member Id"
+            android:hint="Member ID"
             android:textColor="@color/material_dynamic_primary10"
             android:textColorHint="@color/material_dynamic_primary20"
             android:padding="16dp"
-            android:inputType="text"
+            android:inputType="number"
             android:layout_marginBottom="16dp" />
 
-        <!-- Password Input Field -->
+        <!-- Password Input -->
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/round_edittext"
@@ -62,30 +64,47 @@
             android:textColorHint="@color/material_dynamic_primary20"
             android:padding="16dp"
             android:inputType="textPassword"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_marginBottom="24dp" />
 
-        <!-- Login Button with Rounded Corners -->
+        <!-- Login Button -->
         <Button
-            android:id="@+id/loginButton"
-            android:layout_width="190dp"
+            android:id="@+id/loginbutton"
+            android:layout_width="200dp"
             android:layout_height="60dp"
-            android:backgroundTint="@color/material_dynamic_primary0"
+            android:backgroundTint="#299bd7"
             android:text="Log In"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
-            />
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="16dp" />
 
-        <!-- Signup TextView for Navigation -->
+        <!-- Signup Navigation -->
+        <!-- Signup Navigation -->
         <TextView
             android:id="@+id/tvSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have an account? register here"
+            android:text="Don't have an account? Register here"
             android:textColor="@color/material_dynamic_primary0"
             android:textSize="16sp"
-            android:paddingTop="16dp" />
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:clickable="true"
+            android:focusable="true" />
 
+
+        <!-- Franchise Login -->
+        <!-- Franchise Login -->
         <TextView
             android:id="@+id/franchise"
             android:layout_width="wrap_content"
@@ -94,9 +113,11 @@
             android:textColor="#f49421"
             android:textStyle="bold"
             android:textSize="16sp"
-            android:paddingTop="16dp" />
+            android:padding="12dp"
+            android:minHeight="48dp"
+           android:clickable="true"
+           android:focusable="true" />
 
 
     </LinearLayout>
 </ScrollView>
-
